@@ -7,20 +7,20 @@ const FooterComponent = () => {
         <a href="" className='footer__logo'>webdevifti</a>
 
         <ul className='permalinks'>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Experience</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Portfolio</a></li>
-            <li><a href="">Testimonials</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
         <div className="footer__socials">
-            <a href=""><BsLinkedin/></a>
-            <a href=""><BsGithub/></a>
-            <a href=""><BsFacebook/></a>
-            <a href=""><BsTwitter/></a>
-            <a href=""><BsYoutube/></a>
+            <a href="https://www.linkedin.com/in/webdevifti/"><BsLinkedin/></a>
+            <a href="https://github.com/webdevifti"><BsGithub/></a>
+            <a href="https://www.facebook.com/beifti/"><BsFacebook/></a>
+            <a href="https://twitter.com/webdevifti"><BsTwitter/></a>
+            <a href="https://www.youtube.com/channel/UCOh8jKDUrKKxTK81T6TXC9Q"><BsYoutube/></a>
         </div>
         <div className="footer__copyright">
             <small>&copy; webdevifti 2022 | All rightreserve</small>    

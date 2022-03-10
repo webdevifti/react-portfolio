@@ -8,7 +8,7 @@ const HeaderSocial = () => {
         <a data-tip data-for="githubtip"  href="https://github.com/webdevifti" target="_blank"><BsGithub /></a>
         <a data-tip data-for="facebooktip" href="https://www.facebook.com/webdevifti/" target="_blank"><BsFacebook /></a>
         <a data-tip data-for="twittertip" href="https://www.twitter.com/webdevifti/" target="_blank"><BsTwitter /></a>
-        <a data-tip data-for="youtubetip" href="https://www.youtube.com/c/webdevifti/" target="_blank"><BsYoutube /></a>
+        <a data-tip data-for="youtubetip" href="https://www.youtube.com/channel/UCOh8jKDUrKKxTK81T6TXC9Q" target="_blank"><BsYoutube /></a>
 
         <ReactTooltip id="linkedintip" place="right" effect="solid">
         Let's Connect with Linkedin
