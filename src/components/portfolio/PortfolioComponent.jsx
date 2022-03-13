@@ -22,7 +22,7 @@ const PortfolioComponent = () => {
                 <small className='text-light'>{item.category}</small>
                 <h3>{item.title}</h3>
                 <div className='portfolio__item-cta'>
-                <a href={item.codeLink} className='btn' target="_blank">Get Code</a>
+                    <a href="/portfolio/abs" className='btn'>Read Detail</a>
                 <a href={item.demoLink} className='btn btn-primary' target="_blank">View Demo</a></div>
               </article>
             );

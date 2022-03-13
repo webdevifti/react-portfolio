@@ -10,24 +10,32 @@ const ServiceComponent = () => {
       <div className="container services__container">
         <article className='service'>
           <div className="service__head">
-            <h3>UI/UX Design</h3>  
+            <h3>Web Design</h3>  
           </div>  
           <ul className='service__list'>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Design From skecth</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Latest frontend technology version </p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>External/Internal content delivery network</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Your choose/design my hard work</p>
+            </li>
+            <li>
+              <BiCheck className='service__list-icon' />
+              <p>Excellent communication while project running</p>
+            </li>
+            <li>
+              <BiCheck className='service__list-icon' />
+              <p>PSD/XD/FIGMA fils to HTML</p>
             </li>
           </ul>
         </article>
@@ -38,23 +46,19 @@ const ServiceComponent = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Most popular backend technology</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Just give a frontend template</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>If don't have template, i am here to make it</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-            </li>
-            <li>
-              <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Top security level coding</p>
             </li>
           </ul>
         </article>
@@ -65,21 +69,20 @@ const ServiceComponent = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Latest wordpress version</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Mainly focus on blog development</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Portfolio/Landing page</p>
             </li>
             <li>
               <BiCheck className='service__list-icon' />
-              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+              <p>Most popular plugin/theme builder i will use for you</p>
             </li>
-          
           </ul>
         </article>
       </div>

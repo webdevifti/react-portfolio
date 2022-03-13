@@ -10,19 +10,19 @@ const HeaderSocial = () => {
         <a data-tip data-for="twittertip" href="https://www.twitter.com/webdevifti/" target="_blank"><BsTwitter /></a>
         <a data-tip data-for="youtubetip" href="https://www.youtube.com/channel/UCOh8jKDUrKKxTK81T6TXC9Q" target="_blank"><BsYoutube /></a>
 
-        <ReactTooltip id="linkedintip" place="right" effect="solid">
+        <ReactTooltip id="linkedintip" place="top" effect="solid">
         Let's Connect with Linkedin
       </ReactTooltip>
-        <ReactTooltip id="githubtip" place="right" effect="solid">
+        <ReactTooltip id="githubtip" place="top" effect="solid">
         Follow Me on Github
       </ReactTooltip>
-        <ReactTooltip id="facebooktip" place="right" effect="solid">
+        <ReactTooltip id="facebooktip" place="top" effect="solid">
         Follow Me On Facebook
       </ReactTooltip>
-        <ReactTooltip id="twittertip" place="right" effect="solid">
+        <ReactTooltip id="twittertip" place="top" effect="solid">
         Follow Me On Twitter
       </ReactTooltip>
-        <ReactTooltip id="youtubetip" place="right" effect="solid">
+        <ReactTooltip id="youtubetip" place="top" effect="solid">
         Subscribe My Channel
       </ReactTooltip>
     </div>

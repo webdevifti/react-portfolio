@@ -11,49 +11,49 @@ export const PortfolioData = [
     {
         id: 1,
         title: 'This is a portfolio title One',
+        slug: 'this-is-portfolio-item-one',
         category: 'Backend',
         image: img1,
-        codeLink: 'https://github.com/webdevifti',
         demoLink: 'https://dribbble.com/rizkyg'
     },
     {
         id: 2,
         title: 'This is a portfolio title Two',
+        slug: 'this-is-portfolio-item-two',
         category: 'Backend',
         image: img2,
-        codeLink: 'https://github.com/webdevifti',
         demoLink: 'https://dribbble.com/rizkyg'
     },
     {
         id: 3,
         title: 'This is a portfolio title Three',
+        slug: 'this-is-portfolio-item-three',
         category: 'Backend',
         image: img3,
-        codeLink: 'https://github.com/webdevifti',
         demoLink: 'https://dribbble.com/rizkyg'
     },
     {
         id: 4,
         title: 'This is a portfolio title Four',
+        slug: 'this-is-portfolio-item-four',
         category: 'Frontend',
         image: img4,
-        codeLink: 'https://github.com/webdevifti',
         demoLink: 'https://dribbble.com/rizkyg'
     },
     {
         id: 5,
         title: 'This is a portfolio title Five',
+        slug: 'this-is-portfolio-item-five',
         category: 'Frontend',
         image: img5,
-        codeLink: 'https://github.com/webdevifti',
         demoLink: 'https://dribbble.com/rizkyg'
     },
     {
         id: 6,
         title: 'This is a portfolio title Six',
+        slug: 'this-is-portfolio-item-six',
         category: 'Frontend',
         image: img6,
-        codeLink: 'https://github.com/webdevifti',
         demoLink: 'https://dribbble.com/rizkyg'
     },
 ]

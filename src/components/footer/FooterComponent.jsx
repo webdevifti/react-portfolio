@@ -23,7 +23,7 @@ const FooterComponent = () => {
             <a href="https://www.youtube.com/channel/UCOh8jKDUrKKxTK81T6TXC9Q"><BsYoutube/></a>
         </div>
         <div className="footer__copyright">
-            <small>&copy; webdevifti 2022 | All rightreserve</small>    
+            <small>&copy; webdevifti 2022 | All right reserve</small>    
         </div>
     </footer>
   )

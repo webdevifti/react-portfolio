@@ -32,10 +32,15 @@ const AboutComponent = () => {
                 <h5>Project</h5>
                 <small>2100+ Done</small>
               </article>
+              <article className='about__card'>
+                <VscFolderLibrary className='about_icon' />
+                <h5>Lines of Code</h5>
+                <small>20M+ Written</small>
+              </article>
             </div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus provident, consectetur alias laudantium ipsam totam sunt esse, ut rem corrupti at similique? Commodi doloremque non, quod enim inventore a laborum.</p>
+            <p>Solution-driven professional excelling in highly collaborative work environment, finding solutions to challenges and focused on customer satisfaction. Proven experience developing consumer-focused web applications using HTML, CSS, PHP, JavaScript and Laravel Framework. Translating solutions into code and working across many different APIs, third-party integrations and databases.</p>
 
-            <a href="#contact" className='btn btn-primary'>Let's Talk</a>
+            <a href="#contact" className='btn btn-primary'>DM Me</a>
         </div>  
       </div>  
     </section>
