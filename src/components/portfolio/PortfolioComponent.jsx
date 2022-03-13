@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import './portfolio.css'
 import {PortfolioData} from '../../data'
 
@@ -22,7 +23,7 @@ const PortfolioComponent = () => {
                 <small className='text-light'>{item.category}</small>
                 <h3>{item.title}</h3>
                 <div className='portfolio__item-cta'>
-                    <a href="/portfolio/abs" className='btn'>Read Detail</a>
+                    <Link to="/portfolio/title" className='btn'>Read Detail</Link>
                 <a href={item.demoLink} className='btn btn-primary' target="_blank">View Demo</a></div>
               </article>
             );

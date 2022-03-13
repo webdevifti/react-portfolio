@@ -79,3 +79,19 @@ export const TestimonialData = [
         review: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, repellat illo architecto possimus cupiditate voluptatem quia voluptatum nostrum. Totam consectetur dolorum placeat quaerat alias aperiam animi fugit? Vitae, culpa consequuntur"
     }
 ]
+
+
+export const PortfolioSlide = [
+    {
+        id: 1,
+        slide: img5,
+    },
+    {
+        id: 2,
+        slide: img3,
+    },
+    {
+        id: 3,
+        slide: img1,
+    }
+]

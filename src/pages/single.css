@@ -1,0 +1,60 @@
+.portfolio__header{
+    background: red;
+    height: 250px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url('../assets/portfolio1.png');;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.portfolio__heading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.bredcrum{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.bredcrum span{
+    margin-top: 0.3rem;
+    margin-right: 0.3rem;
+}
+.bredcrum li{
+    display: inline;
+}
+.bredcrum li a{
+    margin: 0 10px;
+}
+
+.portfolio_content__container{
+    background: var(--color-bg-varient);
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+.portfolio_content__container{
+   padding: 1rem;
+}
+.portfolio_left_content{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.slide{
+    width: 100%;
+}
+.slide img{
+    border-radius: 0.8rem;
+    height: 500px;
+    object-fit: cover;
+}
+.portfolio_right_content{
+    width: 100%;
+}
+.portfolio_meta_data{
+    margin: 20px 0px;
+}
