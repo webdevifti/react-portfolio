@@ -21,7 +21,9 @@ header{
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
+.header_info{
+    color: var(--color-bg);
+}
 .cta{
     margin-top: 2.5rem;
     display: flex;
@@ -43,6 +45,7 @@ header{
 }
 .header__socials a{
     margin: 0 12px;
+    color: var(--color-bg);
     font-size: 21px;
 }
 /* .header__socials::after{

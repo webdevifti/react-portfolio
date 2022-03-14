@@ -8,12 +8,12 @@ import SinglePortfolio from './pages/SinglePortfolio'
 const App = () => {
   return (
     <>
-    <BrowserRouter>
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/portfolio/:slug' element={<SinglePortfolio />} />
-      </Routes>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/react-portfolio' element={<Home />} />
+          <Route path='/portfolio/:slug' element={<SinglePortfolio />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

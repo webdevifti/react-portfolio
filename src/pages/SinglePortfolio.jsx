@@ -2,8 +2,8 @@ import React from 'react'
 import { Link, useParams } from 'react-router-dom'
 import {AiOutlineRight} from 'react-icons/ai'
 import FooterComponent from '../components/footer/FooterComponent'
-import './single.css'
 import {PortfolioSlide} from '../data'
+import './single.css'
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -59,7 +59,7 @@ const SinglePortfolio = () => {
                 <div className='portfolio_meta_data'>
                     <p><strong>Project Duration: </strong> 10 Days</p>
                     <p><strong>Client Name: </strong> Ariyan Ataur </p>
-                    <p> <strong>Project URL: </strong> <a href="#">https://test.com</a></p>
+                    <p> <strong>Project URL: </strong> <Link to="/">https://test.com</Link></p>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt culpa rem praesentium recusandae dignissimos quisquam assumenda nemo, necessitatibus corrupti ad.</p>
                 </div>

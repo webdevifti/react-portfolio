@@ -7,15 +7,17 @@ const HeaderComponent = () => {
     <header>
       <div className='bg'>
       <div className="container header__container">
-        <h5>Hello I'm</h5>
-        <h1>Eftekhar Alam</h1>
-        <h5 className="text-light">Web Designer | FullStack Developer | Wordpress Developer</h5>
+        <div className='header_info'>
+          <h5>Hello I'm</h5>
+          <h1 className='my_name'>Eftekhar Alam</h1>
+          <h5 className="text-designation">Web Designer | FullStack Developer | Wordpress Developer</h5>
+        </div>
         <HeaderSocial />
         <CTA />
         {/* <div className="me">
           <img src={Me} alt="My Image" />
         </div> */}
-        <a href="#about" className='scroll__down'>Scroll Down</a>
+        {/* <a href="#about" className='scroll__down'>Scroll Down</a> */}
       </div>
       </div>
     </header>
