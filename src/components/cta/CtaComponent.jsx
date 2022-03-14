@@ -12,8 +12,8 @@ const CtaComponent = () => {
                 <h4>I am available on popular market places. Have you any project lets disscus on </h4>
             </div>
             <div className='call_to_action_right_content'>
-                <a href="https://www.fiverr.com/webdevifti?up_rollout=true" target="_blank" className='btn btn-primary'>Fiverr</a>
-                <a href="https://www.upwork.com/freelancers/~01af2372e71ed5474b" target="_blank" className='btn btn-primary'>Upwork</a>
+                <a href="https://www.fiverr.com/webdevifti?up_rollout=true" target="_blank" className='btn btn-primary fiverr-btn'>Fiverr</a>
+                <a href="https://www.upwork.com/freelancers/~01af2372e71ed5474b" target="_blank" className='btn btn-primary upwork-btn'>Upwork</a>
             </div>
         </div>
     </section>

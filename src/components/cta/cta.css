@@ -18,6 +18,9 @@
 .call_to_action_right_content a{
     margin: 0px 1rem;
 }
+.fiverr-btn{
+    background: #1DBF73;
+}
 
 @media screen and (max-width: 1024px){
     .call_to_action__container{
