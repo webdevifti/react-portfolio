@@ -14,10 +14,6 @@ const HeaderComponent = () => {
         </div>
         <HeaderSocial />
         <CTA />
-        {/* <div className="me">
-          <img src={Me} alt="My Image" />
-        </div> */}
-        {/* <a href="#about" className='scroll__down'>Scroll Down</a> */}
       </div>
       </div>
     </header>
