@@ -19,8 +19,8 @@ const TestimonialComponent = () => {
       try{
         const res = await fetch(url);
         const json = await res.json();
-        fetchTestimonials(json);
-        console.log(json);
+        fetchTestimonials(json.data);
+        console.log(json.data);
       }catch(error){
         console.log('Error',error)
       }
@@ -44,7 +44,7 @@ const TestimonialComponent = () => {
             return (
               <SwiperSlide className='testimonial' key={index}>
                 <div className="client__avatar">
-                    {/* <img src={item.clientAvatar} alt="" /> */}
+                    <img src={item.clientAvatar} alt="" />
                 </div>
                 <h5 className='client__name'>{item.name}</h5>
                 <small className='client__review'>{item.testimonial}</small>
