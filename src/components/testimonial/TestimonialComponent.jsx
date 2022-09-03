@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './testimonial.css'
-import {TestimonialData} from '../../data'
+// import {TestimonialData} from '../../data'
 // import Swiper core and required modules
 import { Pagination } from 'swiper';
 
@@ -11,6 +11,22 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const TestimonialComponent = () => {
+  const [testimonial, fetchTestimonials] = useState([]);
+  
+  useEffect(() => {
+    const url = 'http://127.0.0.1:8000/api/testimonials';
+    const getData = async () => {
+      try{
+        const res = await fetch(url);
+        const json = await res.json();
+        fetchTestimonials(json);
+        console.log(json);
+      }catch(error){
+        console.log('Error',error)
+      }
+    }
+    getData();
+  },[]);
   return (
     <section id='testimonials'>
       <h5>Review from clients</h5>
@@ -24,14 +40,14 @@ const TestimonialComponent = () => {
         pagination={{ clickable: true }}
       >
         {
-          TestimonialData.map((item,index) => {
+          testimonial.map((item,index) => {
             return (
               <SwiperSlide className='testimonial' key={index}>
                 <div className="client__avatar">
-                    <img src={item.clientAvatar} alt="" />
+                    {/* <img src={item.clientAvatar} alt="" /> */}
                 </div>
-                <h5 className='client__name'>{item.clientName}</h5>
-                <small className='client__review'>{item.review}</small>
+                <h5 className='client__name'>{item.name}</h5>
+                <small className='client__review'>{item.testimonial}</small>
               </SwiperSlide>
 
             );
