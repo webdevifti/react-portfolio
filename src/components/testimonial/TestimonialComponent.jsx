@@ -20,7 +20,7 @@ const TestimonialComponent = () => {
         const res = await fetch(url);
         const json = await res.json();
         fetchTestimonials(json.data);
-        console.log(json.data);
+        // console.log(json.data);
       }catch(error){
         console.log('Error',error)
       }
