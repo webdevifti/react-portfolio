@@ -13,7 +13,7 @@ const SinglePortfolio = () => {
     let params = useParams();
     // console.log(params);
     const [portfolos, fetchPortfolioes] = useState({});
-    const [images, fetchPortfolioesImages] = useState([]);
+    // const [images, fetchPortfolioesImages] = useState([]);
   
   useEffect(() => {
     const url = 'http://127.0.0.1:8000/api/portfolio/'+params.slug;
@@ -22,7 +22,7 @@ const SinglePortfolio = () => {
         const res = await fetch(url);
         const json = await res.json();
         fetchPortfolioes(json.data.portfolio);
-        fetchPortfolioesImages(json.data.images);
+        // fetchPortfolioesImages(json.data.images);
       }catch(error){
         console.log('Error',error)
       }
@@ -55,7 +55,7 @@ const SinglePortfolio = () => {
                     pagination={{ clickable: true }}
                 >
                     {
-                    images.map((item,index) => {
+                    PortfolioSlide.map((item,index) => {
                         return (
                         <SwiperSlide className='image-slider' key={index}>
                             <div className="slide">
