@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import { Link, useParams } from 'react-router-dom'
 import {AiOutlineRight} from 'react-icons/ai'
 import FooterComponent from '../components/footer/FooterComponent'
@@ -11,6 +11,24 @@ import 'swiper/css/pagination';
 
 const SinglePortfolio = () => {
     let params = useParams();
+    // console.log(params);
+    const [portfolos, fetchPortfolioes] = useState({});
+    const [images, fetchPortfolioesImages] = useState([]);
+  
+  useEffect(() => {
+    const url = 'http://127.0.0.1:8000/api/portfolio/'+params.slug;
+    const getData = async () => {
+      try{
+        const res = await fetch(url);
+        const json = await res.json();
+        fetchPortfolioes(json.data.portfolio);
+        fetchPortfolioesImages(json.data.images);
+      }catch(error){
+        console.log('Error',error)
+      }
+    }
+    getData();
+  },[]);
   return (
     <div>
         <div className='portfolio__header'>
@@ -37,11 +55,11 @@ const SinglePortfolio = () => {
                     pagination={{ clickable: true }}
                 >
                     {
-                    PortfolioSlide.map((item,index) => {
+                    images.map((item,index) => {
                         return (
                         <SwiperSlide className='image-slider' key={index}>
                             <div className="slide">
-                                <img src={item.slide} alt="" />
+                                <img src={item.media_file} alt="" />
                             </div>
                         </SwiperSlide>
 
@@ -52,14 +70,11 @@ const SinglePortfolio = () => {
             </div>
             <div className='portfolio_right_content'>
                 <h3>Description</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At explicabo aut commodi voluptatum distinctio odit asperiores inventore culpa quasi accusantium ut dicta facere tempore doloribus, nemo in possimus, earum saepe minima autem, laudantium optio incidunt magnam? Laborum nemo praesentium ipsa veritatis, rem sit iste veniam. Suscipit labore eligendi reprehenderit explicabo odio rerum libero. Ad, incidunt dicta rerum dolorum, repellendus sapiente architecto doloribus, at inventore rem voluptatibus facilis eius. Iusto possimus dolore expedita corrupti nulla recusandae tenetur quidem fugiat reprehenderit, cumque laudantium provident debitis quos quis quia non in velit quam hic consectetur neque quasi rerum placeat tempore! Ducimus, accusantium tempore.</p>
-
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, in rerum, error non temporibus officia ea animi autem distinctio eius neque cupiditate. Consequatur sunt aut excepturi quo eligendi aliquam iusto sequi libero, ipsum impedit id cupiditate laboriosam ex porro dignissimos maxime, est totam. Consectetur inventore saepe nihil! Odio, ipsum sed!</p>
-
+                   {portfolos.description}
                 <div className='portfolio_meta_data'>
-                    <p><strong>Project Duration: </strong> 10 Days</p>
-                    <p><strong>Client Name: </strong> Ariyan Ataur </p>
-                    <p> <strong>Project URL: </strong> <Link to="/">https://test.com</Link></p>
+                    <p><strong>Project Duration: </strong> {portfolos.duration}</p>
+                    <p><strong>Client Name: </strong> {portfolos.client_name} </p>
+                    <p> <strong>Project URL: </strong> <Link to="/">{portfolos.hosted_url}</Link></p>
 
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt culpa rem praesentium recusandae dignissimos quisquam assumenda nemo, necessitatibus corrupti ad.</p>
                 </div>
